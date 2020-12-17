@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="200" style="text-align: center;">
+    <tr>
+        <th>用户id</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>序号</th>
+    </tr>
+    <tr th:each="user,iterStat : ${userList}">
+        <td th:text="${user.id}">用户id</td>
+        <td th:text="${user.name}">姓名</td>
+        <td th:text="${user.age}">年龄</td>
+        <td th:text="${iterStat.index}">序号  0</td>
+        <td th:text="${iterStat.count}">序号  1</td>
+        <td th:text="${iterStat.size}">集合大小</td>
+        <td th:text="${iterStat.current}">当前迭代量</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <!-- th:if 条件成立就显示 -->
+    <h1 th:if="${result=='yes'}">结果就是true</h1>
+    <!-- th:unless 条件不成立就显示 -->
+    <h1 th:unless="${result=='no'}">结果就是false</h1>
+     <!-- switch选择语句 -->
+     <div th:switch="${menu}">
+         <p th:case="'admin'">User is an administrator</p>
+         <p th:case="${manager}">User is a manager</p>
+     </div>
+</body>
+</html>
