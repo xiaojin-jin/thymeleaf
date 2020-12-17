@@ -15,8 +15,9 @@ public class FirstThymeleafController {
     @GetMapping("/first")
     public String indexPage(Model model) {
         String message = "Hello, Thymeleaf!";
+        String message1 = "Hello, pkkkkkk!";
         model.addAttribute("message", message);
-        
+        model.addAttribute("message1", message1);
         return "index";
     }
 //    @GetMapping("/index")
