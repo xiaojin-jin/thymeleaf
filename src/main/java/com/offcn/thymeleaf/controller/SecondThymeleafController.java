@@ -23,7 +23,7 @@ public class SecondThymeleafController {
     @GetMapping("/second")
     public String indexPage(Model model) {
         String message = "Hello, Thymeleaf!";
-        User u = new User(1,"潘裤裤",18);
+        User u = new User(1,"潘裤裤1111111111",18);
 
         Map<String,Object> map=new HashMap<>();
         map.put("src1","1.jpg");
