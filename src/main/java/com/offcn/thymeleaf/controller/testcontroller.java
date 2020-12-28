@@ -9,7 +9,7 @@ public class testcontroller {
 
     @RequestMapping("/helloGit")
     public String hell(){
-        System.out.println("--------------");
+        System.out.println("---------111111-----");
         return "success";
     }
 }
